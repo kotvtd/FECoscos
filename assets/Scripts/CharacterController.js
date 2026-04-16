@@ -96,8 +96,10 @@ cc.Class({
     },
 
     moveCharacter: function(event, direction){
-        this.anim.setAnimation(0, "walk", true);
-        this.isAnimation = false;
+        if(!this.isMoving){
+            this.anim.setAnimation(0, "walk", true);
+            this.isAnimation = false;
+        }
         if(direction === "right"){
             if(!this.isRight){
                 this.flipCharacter();
