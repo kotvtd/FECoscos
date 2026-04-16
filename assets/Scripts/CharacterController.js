@@ -26,7 +26,6 @@ cc.Class({
     },
 
     start () {
-
     },
 
     updateSpeed: function(){
@@ -93,6 +92,7 @@ cc.Class({
         this.isRight = !this.isRight;
         this.node.scaleX *= -1;
         this.labelName.node.scaleX *= -1;
+        this.progressBar.node.scaleX *= -1;
     },
 
     moveCharacter: function(event, direction){

@@ -113,8 +113,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 830.08,
-      "height": 126
+      "width": 260.11158371975694,
+      "height": 35.28
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -167,20 +167,22 @@
     "_dstBlendFactor": 771,
     "_string": "My name Lai Vung",
     "_N$string": "My name Lai Vung",
-    "_fontSize": 100,
-    "_lineHeight": 100,
+    "_fontSize": 28,
+    "_lineHeight": 28,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "51bb0f41-dbdc-44fe-b028-a014d5cb8771"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
-    "_styleFlags": 0,
+    "_styleFlags": 2,
     "_underlineHeight": 0,
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_id": ""
   },
   {
@@ -345,7 +347,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "67e68bc9-dad5-4ad9-a2d8-7e03d458e32f"
+      "__uuid__": "5779a6af-e742-4e5e-9671-7e6c316b2e05"
     },
     "_type": 1,
     "_sizeMode": 0,

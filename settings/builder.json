@@ -1,7 +1,7 @@
 {
   "title": "FECoscos",
   "packageName": "org.cocos2d.demo",
-  "startScene": "031635b7-0e8b-4630-8212-e5fe106e9751",
+  "startScene": "7ca4b572-488e-469c-a9b1-8e7af10f3e63",
   "excludeScenes": [],
   "orientation": {
     "landscapeRight": true,
