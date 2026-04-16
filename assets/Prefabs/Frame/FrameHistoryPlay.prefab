@@ -250,7 +250,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 2,
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_id": ""
   },
   {
@@ -437,7 +437,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_id": ""
   },
   {
@@ -654,7 +654,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_id": ""
   },
   {
@@ -830,7 +830,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_id": ""
   },
   {
@@ -1121,7 +1121,7 @@
     "_N$font": {
       "__uuid__": "51bb0f41-dbdc-44fe-b028-a014d5cb8771"
     },
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_N$maxWidth": 0,
     "_N$lineHeight": 50,
     "_N$imageAtlas": null,
@@ -1330,7 +1330,7 @@
     "_N$font": {
       "__uuid__": "51bb0f41-dbdc-44fe-b028-a014d5cb8771"
     },
-    "_N$cacheMode": 0,
+    "_N$cacheMode": 1,
     "_N$maxWidth": 0,
     "_N$lineHeight": 50,
     "_N$imageAtlas": null,
