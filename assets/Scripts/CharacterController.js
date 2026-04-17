@@ -26,6 +26,7 @@ cc.Class({
     },
 
     start () {
+        cc.profiler.showStats();
     },
 
     updateSpeed: function(){
