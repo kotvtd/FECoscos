@@ -33,8 +33,7 @@ class mEmitter {
         console.log("delete");
     }
 
-    destroy()
-    {
+    destroy(){
         this._emiter.removeAllListeners();
         this._emiter = null;
         mEmitter.instance = null;

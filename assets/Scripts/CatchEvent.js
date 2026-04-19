@@ -18,8 +18,6 @@ cc.Class({
 
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad () {
         if(!Emitter.instance) {
             Emitter.instance = new Emitter();
@@ -42,13 +40,15 @@ cc.Class({
     onHello(data){
         console.log('HELLO data:', data);
     },
+
     onWelcome(data){
         console.log('WELCOME data:', data);
     },
+
     onClickAnim(data){
-        console.log('CLICK_ANIM data:', data);
         this.player.setAnimation(0, data, true);
     },
+
     onClickModeAnim(data){
         this.stopMode();
         switch (data) {
@@ -66,9 +66,9 @@ cc.Class({
                 break;
         }
     },
+
     tweenMode(){
         let baseScale = Math.abs(this.player.node.scale);
-        console.log(baseScale);
         cc.tween(this.player.node).repeatForever(
             cc.tween().call(() => this.flip(1))
             .to(2,{
@@ -124,7 +124,6 @@ cc.Class({
     },
 
     flip(scale){
-        console.log('flip');
         let scaleCheck = this.player.node.scaleX;
         if(scale > 0){
             if(scaleCheck < 0)
@@ -144,10 +143,4 @@ cc.Class({
         Emitter.instance.registerEvent(event,bound);
 
     }
-
-
-
-
-
-
 });
