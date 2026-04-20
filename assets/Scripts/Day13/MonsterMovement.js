@@ -13,11 +13,13 @@ cc.Class({
             default: null
         }
     },
-
-
+    isGoing: false,
     start () {
 
     },
+    update(dt){
+        
+    }
 
     initMonster(up, down){
         this.upPoint = up;
