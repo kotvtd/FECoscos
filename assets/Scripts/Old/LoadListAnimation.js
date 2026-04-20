@@ -28,7 +28,6 @@ cc.Class({
 
         },
     },
-    // LIFE-CYCLE CALLBACKS:
     onLoad () {
         this.view = this.listAnimation.getChildByName("view");
         this.content = this.view.getChildByName("content");
