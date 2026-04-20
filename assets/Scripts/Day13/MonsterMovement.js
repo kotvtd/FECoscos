@@ -1,6 +1,5 @@
 cc.Class({
     extends: cc.Component,
-
     properties: {
         upPoint: {
             type: cc.Node,
@@ -13,18 +12,38 @@ cc.Class({
             default: null
         }
     },
-    isGoing: false,
-    start () {
 
+    start() {
+        this.isGoUp = false;
+        this.speed = 100;
     },
-    update(dt){
-        
-    }
+    update(dt) {
+        this.moveToPatrol(dt);
+    },
 
-    initMonster(up, down){
+    initMonster(up, down) {
         this.upPoint = up;
         this.downPoint = down;
-        console.log("up: " + this.upPoint.name);
-        console.log("down: " + this.downPoint.name);
+    },
+
+    moveToPatrol(dt) {
+        if (!this.upPoint || !this.downPoint) {
+            return;
+        }
+        let position = this.node.position;
+        if (this.isGoUp) {
+            position.y += this.speed * dt;
+            if (position.y >= this.upPoint.y) {
+                position.y = this.upPoint.y;
+                this.isGoUp = false;
+            }
+        } else {
+            position.y -= this.speed * dt;
+            if (position.y <= this.downPoint.y) {
+                position.y = this.downPoint.y;
+                this.isGoUp = true;
+            }
+        }
+        this.node.setPosition(position);
     }
 });
