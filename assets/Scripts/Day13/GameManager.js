@@ -5,8 +5,6 @@ cc.Class({
     onLoad() {
         this.init();
     },
-    // start () {
-    // },
     init() {
         let manager = cc.director.getCollisionManager();
         manager.enabled = true;

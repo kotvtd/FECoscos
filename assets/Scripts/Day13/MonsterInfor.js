@@ -2,28 +2,28 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        hpBar:  cc.ProgressBar,
+        hpBar: cc.ProgressBar,
     },
 
-    onLoad() { 
+    onLoad() {
         this.maxHP = 100;
         this.currentHP = this.maxHP;
     },
 
-    start () {
+    start() {
 
     },
-    update(dt){
+    update(dt) {
         this.updateHPBar();
     },
 
-    updateHPBar(){
+    updateHPBar() {
         this.hpBar.progress = this.currentHP / this.maxHP;
     },
 
-    getDame(dame){
+    getDame(dame) {
         this.currentHP -= dame;
-        if(this.currentHP <= 0){
+        if (this.currentHP <= 0) {
             this.node.destroy();
         }
     },

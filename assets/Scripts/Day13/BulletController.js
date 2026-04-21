@@ -6,6 +6,7 @@ cc.Class({
     properties: {
         speed: 300,
         dame: 10,
+
     },
 
     onLoad () {

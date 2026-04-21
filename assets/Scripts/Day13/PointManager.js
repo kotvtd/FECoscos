@@ -4,6 +4,5 @@ cc.Class({
     properties: {
         upPoint: cc.Node,
         downPoint: cc.Node,
-
     },
 });

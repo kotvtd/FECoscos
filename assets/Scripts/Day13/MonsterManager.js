@@ -16,21 +16,21 @@ cc.Class({
             default: []
         }
     },
-    onLoad () {
+    onLoad() {
         this.monster = this.spawnMonster();
     },
-    start () {
+    start() {
         this.setProperties();
     },
 
-    spawnMonster(){
+    spawnMonster() {
         let monster = cc.instantiate(this.monsterPrefab);
         monster.parent = this.monsterContainer;
         monster.setPosition(0, 0);
         return monster;
     },
 
-    setProperties(){
+    setProperties() {
         let monsterMovement = this.monster.getComponent("MonsterMovement");
         let pointManager = this.monsterContainer.getComponent("PointManager");
         monsterMovement.initMonster(pointManager.upPoint, pointManager.downPoint);
