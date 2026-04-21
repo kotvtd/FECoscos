@@ -1,3 +1,5 @@
+const Emitter = require('mEmitter');
+
 cc.Class({
     extends: cc.Component,
 
@@ -8,6 +10,10 @@ cc.Class({
             type: cc.Integer,
             isVisible: false,
             default: 100,
+        },
+        monsterList: {
+            type: [cc.Node],
+            default: []
         }
     },
     onLoad () {
@@ -27,8 +33,6 @@ cc.Class({
     setProperties(){
         let monsterMovement = this.monster.getComponent("MonsterMovement");
         let pointManager = this.monsterContainer.getComponent("PointManager");
-        console.log(this.monsterContainer);
         monsterMovement.initMonster(pointManager.upPoint, pointManager.downPoint);
-    }
-
+    },
 });

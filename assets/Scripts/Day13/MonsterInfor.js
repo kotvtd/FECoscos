@@ -7,22 +7,32 @@ cc.Class({
 
     onLoad() { 
         this.maxHP = 100;
-        this.curentHP = this.maxHP;
+        this.currentHP = this.maxHP;
     },
 
     start () {
 
     },
+    update(dt){
+        this.updateHPBar();
+    },
+
     updateHPBar(){
-        this.hpBar.progress = this.curentHP / this.maxHP;
+        this.hpBar.progress = this.currentHP / this.maxHP;
     },
 
     getDame(dame){
-        this.curentHP -= dame;
-        if(dame <= 0){
-            this.onDestroy.destroy();
+        this.currentHP -= dame;
+        if(this.currentHP <= 0){
+            this.node.destroy();
         }
     },
 
+    onCollisionEnter(other, self) {
+        let dame = other.getComponent("BulletController").dame;
+        console.log(dame);
+        this.getDame(dame);
+        other.node.destroy();
+    }
 
 });
